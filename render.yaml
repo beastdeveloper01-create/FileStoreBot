@@ -1,0 +1,25 @@
+services:
+  # Service 1: The main bot (Web Service)
+  - type: web
+    name: file-store-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 main.py
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8011
+      - key: PYTHON_VERSION
+        value: 3.10.0
+    plan: free
+
+  # Service 2: The migrator bot (Background Worker)
+  - type: worker
+    name: migrator-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 migrator.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+    plan: free
