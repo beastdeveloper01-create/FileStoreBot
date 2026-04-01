@@ -7,12 +7,12 @@ from config import LOGGER
 import os
 
 
-TOKEN = "8730309806:AAG8IZ5ueZlo7f9b8JyTEjwG62NLxP6jJlo"
+TOKEN = "8785842653:AAH-ksMbomVfdIdM4PB8vXXTfSWhE-uFYqY"
 API_ID = 33276508
 API_HASH = "e0b0092faca018e16c5ad30573290412"
 
 BOT_FLEET = {
-    "〶 Bot 1": "MiyamotoFileBot",
+    "〶 Bot 1": "File_S_Demobot",
     "〶 Bot 2": "KomiAMBot",
     "〶 Bot 3": "HinataAMbot",
 }
