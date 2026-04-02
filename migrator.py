@@ -8,7 +8,7 @@ import os
 
 
 TOKEN = "8785842653:AAH-ksMbomVfdIdM4PB8vXXTfSWhE-uFYqY"
-API_ID = int(os.getenv("API_ID",33461228 ))
+API_ID = int(os.getenv("API_ID", 33461228))
 API_HASH = os.getenv("API_HASH", "52850b8b740b1f87bb55329cce4d65a0")
 
 BOT_FLEET = {
